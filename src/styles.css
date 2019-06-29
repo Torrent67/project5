@@ -1,0 +1,16 @@
+.jumptron{
+  margin-top: 2%;
+  font-size: 20px;
+  max-width: 150%;
+  height: 500%;
+  text-align: center;
+  background-color: black;
+  color: lavender;
+}
+
+.jumptron2{
+  font-size: 20px;
+  text-align-last: center;
+  background-color: black;
+  color: lavender;
+}
