@@ -11,8 +11,10 @@ The user can enter their age and it will convert it to their age in solar years 
 ### Specs
  Spec  Input Output
 
- **Wll converts user age to the equivalent ag' on another planet**
- **Will calulate user average life expectancy **
+ **Wll converts user age to the equivalent ag' on another planet by taking users age, multiplying it by earth days, then dividing it by planet days.
+ example, user inputs age 28, output will be 14 on mars.
+ **Will calulate user average life expectancy by taking users gender selection, diving it by planet days then subtracting users inputed age.
+   example user male inputs age 28 output will be 9 on mars.  **
 ****
 
 ## Setup/Installation Requirements

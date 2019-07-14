@@ -17,42 +17,28 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Project Name',      // CHANGE THIS
+      title: 'Solar Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
   ],
   module: {
-     rules: [
-       {
-         test: /\.css$/,
-         use: [
-           'style-loader',
-           'css-loader'
-         ]
-       },
-       {
-         test: /\.js$/,
-         exclude: /node_modules/,
-         loader: "eslint-loader"
-       },
-       {
-         test: /\.(png|jpg|gif)$/,
-         loader: 'url-loader'
-       },
-       // new rule
-       {
-         test: /\.js$/,
-         exclude: [
-           /node_modules/,
-           /spec/
-         ],
-         loader: "babel-loader",
-         options: {
-           presets: ['es2015']
-         }
-       }
-     ]
-   }
- };
- 
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
+        test: /\.js$/,
+        exclude: [
+          /node_modules/,
+          /spec/
+        ],
+        loader: "eslint-loader"
+      }
+    ]
+  }
+};
