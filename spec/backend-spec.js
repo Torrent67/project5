@@ -15,11 +15,11 @@ expect(this.marsCalc).toEqual(14);
 it('should convert age to desierd planet venus',function(){
 let ageVenus = 28
 let earth = 365
-let venuus = 225
+let venus = 225
 let calc = new PlanetConversion(ageVenus);
 
 this.venusCalc = parseInt(ageVenus * earth / venus);
-expect(this.venus Calc).toEqual(45);
+expect(this.venusCalc).toEqual(45);
 
 })
 
@@ -48,7 +48,7 @@ it('should convert life expetancy for planet mars',function(){
 let maleAge = 70
 let marsYear = 1.88
 let ageMars = 28
-let calc = new PlanetConversion(marsMale);
+let calc = new PlanetConversion(ageMars);
 
 this.marsMale = parseInt(maleAge / marsYear - ageMars);
 expect(this.marsMale).toEqual(9);
@@ -58,7 +58,7 @@ it('should convert life expetancy for planet venus',function(){
 let maleAge = 70
 let venusYear = .62
 let ageVenus = 28
-let calc = new PlanetConversion(venusMale);
+let calc = new PlanetConversion(ageVenus);
 
 this.venusMale = parseInt(maleAge / venusYear - ageVenus);
 expect(this.venusMale).toEqual(84);
@@ -68,17 +68,17 @@ it('should convert life expetancy for planet jupiter',function(){
 let maleAge = 70
 let jupiterYear = 11.8
 let ageJupiter = 28
-let calc = new PlanetConversion(jupiterMale);
+let calc = new PlanetConversion(ageJupiter);
 
 this.jupiterMale = parseInt(maleAge / jupiterYear - ageJupiter);
-expect(this.jupiterMale).toEqual(22);
+expect(this.jupiterMale).toEqual(-22);
 
 })
 it('should convert life expetancy for planet mercury',function(){
 let maleAge = 70
 let mercuryYear = .24
 let ageMercury = 28
-let calc = new PlanetConversion(mercuryMale);
+let calc = new PlanetConversion(ageMercury);
 
 this.mercuryMale = parseInt(maleAge / mercuryYear - ageMercury);
 expect(this.mercuryMale).toEqual(263);
